@@ -1,0 +1,43 @@
+name: 'Release & Assets'
+description: 'Create a release, upload release assets, and copy a release to other repository'
+author: 'Hs1r1us'
+inputs:
+  tag_name:
+    description: 'The name of the tag'
+    required: true
+  release_name:
+    description: 'The name of the release'
+    required: false
+  body:
+    description: 'Text describing the contents of the tag'
+    required: false
+  body_path:
+    description: 'Path to file with information about the tag'
+    required: false
+  asset_files:
+    description: 'The path to the asset you want to upload'
+    required: false
+  draft:
+    description: '`true` to create a draft (unpublished) release, `false` to create a published one. Default: `false`'
+    required: false
+    default: false
+  prerelease:
+    description: '`true` to identify the release as a prerelease. `false` to identify the release as a full release. Default: `false`'
+    required: false
+    default: false
+  repo:
+    description: 'Repository on which to release.  Used only if you want to create the release on another repo'
+    required: false
+outputs:
+  id:
+    description: 'The ID of the created Release'
+  html_url:
+    description: 'The URL users can navigate to in order to view the release'
+  upload_url:
+    description: 'The URL for uploading assets to the release'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'tag'
+  color: 'purple'

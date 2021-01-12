@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@actions/io": "^1.0.2",
+    "got": "^11.8.1",
+    "mime": "^2.4.7"
+  },
+  "name": "release-aio",
+  "description": "Create a release, upload release assets, and copy a release to other repository.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hs1r1us/Release-AIO.git"
+  },
+  "keywords": [
+    "github",
+    "release",
+    "asset"
+  ],
+  "author": "Hs1r1us",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hs1r1us/Release-AIO/issues"
+  },
+  "homepage": "https://github.com/Hs1r1us/Release-AIO#readme"
+}
