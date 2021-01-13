@@ -15,11 +15,11 @@ const tagName = core.getInput('tag_name', { required: true }),
     assetFile = core.getInput('asset_files', { require: false }),
     draft = core.getInput('draft', { required: false }) === 'true',
     prerelease = core.getInput('prerelease', { required: false }) === 'true',
-    getRepo = core.getInput('repo', { required: false }) || currentOwner + "/" + currentRepo,
     githubToken = process.env.GITHUB_TOKEN,
     octokit = GitHub.getOctokit(githubToken),
     context = GitHub.context,
-    { owner: currentOwner, repo: currentRepo } = context.repo;
+    { owner: currentOwner, repo: currentRepo } = context.repo,
+    getRepo = core.getInput('repo', { required: false }) || currentOwner + "/" + currentRepo
 var releaseName = core.getInput('release_name', { required: false }).replace('refs/tags/', ''),
     body = core.getInput('body', { required: false }),
     tag = tagName.replace('refs/tags/', '')
