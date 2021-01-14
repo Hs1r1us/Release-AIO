@@ -23,7 +23,7 @@ Reference from [`@actions/create-release`](https://github.com/marketplace/action
 |     body     |                           Text describing the contents of the tag                            |        null        |
 |  body_path   |                         Path to file with information about the tag                          |        null        |
 | asset_files  |                           The path to the asset you want to upload                           |        null        |
-|    draft     |                             Create a draft (unpublished) release                             |
+|    draft     |                             Create a draft (unpublished) release                             |      `false`       |
 |  prerelease  |                             Identify the release as a prerelease                             |      `false`       |
 |     repo     | Repository on which to release.  Used only if you want to create the release on another repo | CurrOwner/CurrRepo |
 
