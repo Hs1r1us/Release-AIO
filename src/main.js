@@ -25,7 +25,7 @@ var releaseName = core.getInput('release_name', { required: false }).replace('re
     tag = tagName.replace('refs/tags/', '')
 const
     owner = getRepo.match(/^[\s\w]+(?=\/)/g)[0],
-    repo = getRepo.match(/[^\/][\d\w]+$/g)[0]
+    repo = getRepo.match(/[^\/][\d\w-]+$/g)[0]
 
 var assetArray = [],
     bodyFileContent,
