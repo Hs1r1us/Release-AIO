@@ -41,7 +41,7 @@ Reference from [`@actions/create-release`](https://github.com/marketplace/action
 ```
 - name: Create Release With Asset
   id: Release-AIO
-  uses: Hs1r1us/Release-AIO@v1
+  uses: Hs1r1us/Release-AIO@v2.0.0
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   with:
@@ -55,7 +55,7 @@ Reference from [`@actions/create-release`](https://github.com/marketplace/action
 ```
 - name: Duplicate Release With Asset to public_Repo
   id: Release-AIO
-  uses: Hs1r1us/Release-AIO@v1
+  uses: Hs1r1us/Release-AIO@v2.0.0
   env:
     GITHUB_TOKEN: ${{ secrets.PRIVATE_TOKEN }} # You need a new token to access the target Repository
   with:

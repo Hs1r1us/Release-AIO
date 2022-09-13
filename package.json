@@ -8,7 +8,7 @@
   },
   "name": "release-aio",
   "description": "Create a release, upload release assets, and copy a release to other repository.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
